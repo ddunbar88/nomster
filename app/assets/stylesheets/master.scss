@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Kanit');
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -25,4 +26,9 @@ body {
 .navbar {
   background: image_url('tex2res4.png');
   box-shadow: 0px 1px 3px #a9a9a9;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FF8000;
+  font-family: 'Kanit', sans-serif;
 }
