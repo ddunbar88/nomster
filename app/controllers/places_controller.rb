@@ -1,11 +1,6 @@
 class PlacesController < ApplicationController
 
-def self.search(term, page)
-  if term
-    where('name LIKE ?', "%#{term}%").paginate(page: page, per_page: 5).order('id DESC')
-  else
-    paginate(page: page, per_page: 5).order('id DESC') 
+  def index
+    @places = Place.all
   end
-end
-
-end
+end 
