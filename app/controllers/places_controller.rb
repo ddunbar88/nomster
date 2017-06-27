@@ -22,6 +22,12 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
   end
 
+  def update
+    @palce = Place.find(params[:id])
+    @palce.update_attributes(place_params)
+    redirect_to root_path
+  end
+
   private
 
   def place_params
